@@ -2,24 +2,37 @@ body {
 	font-family: 'Roboto', sans-serif;
 	width:100%;
 	position:absolute;
+	margin:0;
+	font-weight: 100;
+	color:#f0f3f6;
+}
+
+a {
+	text-decoration: none;
+	color: #f0f3f6;
 }
 
 nav#header {
 	width:100%;
-	height:100px;
+	height:50px;
 	background-color: #5495d0;
 	position:fixed;
 	top:0;
 	left:0;
+	z-index:99999;
 }
 
 #header h1 {
 	font-family: 'Oswald', sans-serif;
 	float:left;
 	margin-left:20px;
-	font-size:2em;
-	color: white;
+	font-size:1em;
+	color: #f0f3f6;
 	vertical-align: middle;
+}
+
+nav#header ul {
+	list-style:none;
 }
 
 ul#contact-list {
@@ -28,35 +41,116 @@ ul#contact-list {
 	position:absolute;
 	left: 20px;
 	margin-left: 50px;
+	height:100%;
 }
 
 .contact {
 	float:right;
-	padding: 0 10px 0 10px;
+	padding: 5px 10px 5px 10px;
 	border-radius:4px;
+	margin:-5px 0 -5px 0;
+	position:relative;
+	top:0;
 }
 
-.contact:hover {
-	background-color: #1f69a0;
-}
 
 .contact img {
 	height:50%;
 	vertical-align: middle;
+	/*top:50%;*/
+	position:relative;
 }
 
-#under-construction {
+.navLink {
+	float:right;
+	padding: 5px 10px 5px 10px;
+	margin: -5px 30px -5px 30px;
+}
+
+.navLink:hover, .navLink.clicked, .contact:hover  {
+	border-color: #f0f3f6;
+	border-style: solid;
+	border-width: 1px;
+	border-radius:4px;
+	padding: 4px 9px 4px 9px;
+}
+
+.navLink a {
+	color:#f0f3f6;
+	font-family: 'Roboto', sans-serif;
+}
+
+li.last {
+	margin-right:50px;
+}
+
+#about, #experience, #projects {
+	width:100%;
+	height:100vh;
+	
+	/*position:absolute;*/
+	/*left:0;*/
+	/*top:50px;*/
+}
+
+#about, #experience {
+	background-color: #5495d0;
+	color:#f0f3f6;
+}
+
+#projects {
+	background-color: #f0f3f6;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.under {
+	text-decoration: underline;
+}
+
+#intro {
 	width:50%;
-	position:absolute;
-	left:25%;
-	top:15em;
-	background-color: #d5dce0;
-	border-radius: 10px;
-	padding-top: 20px;
-	padding-bottom:20px;
-	text-align: center;
+	position:relative;
+	top:25%;
+	margin:auto;
 }
 
-#under-construction p {
-	margin: 0 10% 0 10%;
+#about img {
+	width:100%;
+}
+
+#about .imgContainer {
+	margin:auto;
+	width:20%;
+	top:27%;
+	position:relative;
+}
+
+.circle {
+	border-radius: 50%;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #f0f3f6;
+}
+
+img.under-construction {
+	width:100%;
+	margin:auto;
+}
+
+div.under-construction {
+	width:25%;
+	margin:auto;
+	position:relative;
+	top:20%;
+}
+
+.blue {
+	color:#5495d0;
+}
+
+.coming-soon {
+	text-align:center;
 }
