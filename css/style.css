@@ -1,0 +1,62 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	width:100%;
+	position:absolute;
+}
+
+nav#header {
+	width:100%;
+	height:100px;
+	background-color: #5495d0;
+	position:fixed;
+	top:0;
+	left:0;
+}
+
+#header h1 {
+	font-family: 'Oswald', sans-serif;
+	float:left;
+	margin-left:20px;
+	font-size:2em;
+	color: white;
+	vertical-align: middle;
+}
+
+ul#contact-list {
+	list-style:none;
+	display:block;
+	position:absolute;
+	left: 20px;
+	margin-left: 50px;
+}
+
+.contact {
+	float:right;
+	padding: 0 10px 0 10px;
+	border-radius:4px;
+}
+
+.contact:hover {
+	background-color: #1f69a0;
+}
+
+.contact img {
+	height:50%;
+	vertical-align: middle;
+}
+
+#under-construction {
+	width:50%;
+	position:absolute;
+	left:25%;
+	top:15em;
+	background-color: #d5dce0;
+	border-radius: 10px;
+	padding-top: 20px;
+	padding-bottom:20px;
+	text-align: center;
+}
+
+#under-construction p {
+	margin: 0 10% 0 10%;
+}
