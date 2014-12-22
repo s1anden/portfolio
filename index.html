@@ -4,7 +4,7 @@
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oswald">
-	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:100,400">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:100,200,300,400">
 	<link rel="icon" type="image/png" href="images/favicon.png">
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -14,11 +14,12 @@
 </head>
 <body>
 	<nav id="header">
+		<img id="mobile-nav" src="images/menu-08.png" />
 		<a href="#about"><h1>SAMANTHA LANDEN</h1></a>
 
 		<ul id="contactList">
 			<!-- Icons courtesy of @danleech -->
-			<li id="email" class="contact last">
+			<li id="email" class="contact">
 				<a href="mailto:samantha.landen@gmail.com">
 					<img src="images/icons/gmail.png" />
 				</a>
@@ -28,7 +29,7 @@
 					<img src="images/icons/linkedin.png" />
 				</a>
 			</li>
-			<li id="github" class="contact">
+			<li id="github" class="contact last">
 				<a href="https://github.com/s1anden" target="_blank">
 					<img src="images/icons/github.png" />
 				</a>
@@ -36,14 +37,14 @@
 		</ul>
 
 		<ul id="navList">
-			<li class="navLink last">
-				<a href="#projects">
-					Projects
-				</a>
-			</li>
 			<li class="navLink">
 				<a href="#about">
 					About
+				</a>
+			</li>
+			<li class="navLink last">
+				<a href="#projects">
+					Projects
 				</a>
 			</li>
 		</ul>
@@ -51,7 +52,7 @@
 
 
 	<div id="about">
-		<div id="intro"><p>Hi, my name is <span class="bold">Samantha Landen</span>. I'm a senior at Carnegie Mellon University majoring in Information Systems and Human-Computer Interaction. I love web development, UX design, and music. Take a look around; if you like what you see and would like to chat, shoot me an email at samantha.landen@gmail.com.</p></div>
+		<div id="intro"><p>Hi, my name is <span class="bold">Samantha Landen</span>. I'm a senior at Carnegie Mellon University majoring in Information Systems and Human-Computer Interaction. I love web development, UX design, and music. Take a look around; if you like what you see and want to chat, shoot me an email at <span class="bold">samanthalanden (at) gmail (dot) com</span>.</p></div>
 
 		<div class="imgContainer">
 			<img class="circle" src="images/me.jpg" />
@@ -61,10 +62,89 @@
 
 	<div id="projects">
 		<!-- Image courtesy of Laurent Patain at The Noun Project -->
-		<div class="under-construction">
-			<img class="under-construction" src="images/under-construction-blue.png" />
-			<h1 class="primary coming-soon">Coming soon</h1>
-		</div>
+		<ul>
+			<li class="project">
+				<div class="project-content">
+					<img src="images/femivin.jpg" />
+					<h3>Femivin La Boutique</h3>
+					<a href="#" class="expand-proj">SEE MORE</a>
+				</div>
+				<div class="project-desc">
+					<h4>Client Project</h4>
+				</div>
+			</li>
+
+			<li class="project">
+				<div class="project-content">
+					<img src="images/yelp.jpg" />
+					<h3>Yelp Onboarding</h3>
+					<a href="#" class="expand-proj">SEE MORE</a>
+				</div>
+				<div class="project-desc">
+					<h4>Redesign: Prototype</h4>
+				</div>
+			</li>
+
+			<li class="project">
+				<div class="project-content">
+					<img src="images/amazon.jpg" />
+					<h3>Amazon.com</h3>
+					<a href="#" class="expand-proj">SEE MORE</a>
+				</div>
+				<div class="project-desc">
+					<h4>Summer Internship</h4>
+				</div>
+			</li>
+
+			<li class="project">
+				<div class="project-content">
+					<img src="images/chuck.jpg" />
+					<h3>Project C.H.U.C.K.</h3>
+					<a href="#" class="expand-proj">SEE MORE</a>
+				</div>
+				<div class="project-desc">
+					<h4>Client Project</h4>
+				</div>
+			</li>
+
+			<li class="project">
+				<div class="project-content">
+					<img src="images/ridealong.jpg" />
+					<h3>RideAlong</h3>
+					<a href="#" class="expand-proj">SEE MORE</a>
+				</div>
+				<div class="project-desc">
+					<h4>Mobile App Design</h4>
+				</div>
+			</li>
+
+			<li class="project">
+				<div class="project-content">
+					<img src="images/spotify.jpg" />
+					<h3>Spotify Reviews</h3>
+					<a href="#" class="expand-proj">SEE MORE</a>
+				</div>
+				<div class="project-desc">
+					<h4>Node.js App</h4>
+				</div>
+			</li>
+
+			<!-- <li class="project">
+				<img class="circle" src="images/chem.jpg" />
+				<h3>The ChemCollective</h3>
+				<h4>Summer Internship</h4>
+			</li>
+
+			<li class="project">
+				<img class="circle" src="images/karate.jpg" />
+				<h3>Karate School</h3>
+				<h4>Rails App</h4>
+			</li> -->
+		</ul>
 	</div>
+
+	<footer>
+
+	</footer>
 </body>
 </html>
