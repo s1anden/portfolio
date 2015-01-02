@@ -1,3 +1,4 @@
+var currProj = null;
 $(function() {
 	$(".navLink").click(function(event) {
 		$(".navLink").removeClass("clicked");
@@ -8,7 +9,7 @@ $(function() {
 		$("#navList").toggleClass("show");
 	});
 
-	var mq = window.matchMedia('@media all and (max-width: 600px)');
+	var mq = window.matchMedia("@media all and (max-width: 600px)");
 	if(mq.matches) {
 	    // the width of browser is more then 600px
 	} else {
@@ -29,6 +30,19 @@ $(function() {
 	$(".expand-proj").click(function() {
 		$(this).parents("li.project").find(".project-desc").slideToggle();
 		return false;
+	});
+
+	$("#formSubmit").click(function() {
+		// Send me an email somehow?
+	});
+
+	$(".expand-proj").click(function() {
+		$(currProj).slideUp();
+		currProj = "#" + $(this).parents("li.project").first().data("proj");
+		$(currProj).slideDown();
+
+		$('html,body').animate({
+        scrollTop: $("#placeholder").offset().top});
 	});
 });
 
