@@ -361,11 +361,34 @@ footer {
 			// height:100%;
 			margin-right:5%;
 			background-color:$white;
+			display: inline-block;
 
-			@media screen and (max-width: $break-small) {
+			@media screen and (max-width: $break-medium) {
 				width:100%;
 				margin:auto;
 				box-sizing:border-box;
+			}
+		}
+
+		.desc-pictures {
+			width:45%;
+			// margin-left:5%;
+			height:100%;
+			display: inline-block;
+			float:right;
+
+			img {
+				max-width: 100%;
+				max-height:100vh;
+				@extend .card-shadow;
+				border-radius:2px;
+			}
+
+			@media screen and (max-width: $break-medium) {
+				width:100%;
+				float:none;
+				margin:auto;
+				margin-top: 20px;
 			}
 		}
 	}
