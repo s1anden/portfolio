@@ -90,50 +90,72 @@ footer .contactList {
 #header h1 {
   font-family: 'Oswald', sans-serif;
   float: left;
-  margin-left: 20px;
+  padding: 12.5px 20px 12.5px 20px;
+  margin: 0;
   font-size: 1em;
+  line-height: 25px;
   vertical-align: middle;
+  display: inline-block;
+  height: 100%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
-/* line 105, ../sass/style.scss */
+/* line 112, ../sass/style.scss */
 #header a {
   color: #FFFFFF;
+  height: 100%;
+  display: inline-block;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
-/* line 109, ../sass/style.scss */
+@media screen and (min-width: 600px) {
+  /* line 121, ../sass/style.scss */
+  #header a#name:hover, #header a#name.clicked {
+    background-color: #303F9F;
+  }
+}
+/* line 130, ../sass/style.scss */
 #header #navList {
   float: right;
   margin: 0;
 }
 @media screen and (min-width: 600px) {
-  /* line 109, ../sass/style.scss */
+  /* line 130, ../sass/style.scss */
   #header #navList {
     height: 100%;
   }
 }
-/* line 115, ../sass/style.scss */
+/* line 136, ../sass/style.scss */
 #header #navList .navLink {
   float: left;
-  padding: 12.5px 10px 12.5px 10px;
   margin: 0 30px 0 30px;
+  height: 100%;
+}
+/* line 141, ../sass/style.scss */
+#header #navList .navLink a {
   line-height: 25px;
+  padding: 12.5px 10px 12.5px 10px;
 }
 @media screen and (min-width: 600px) {
-  /* line 121, ../sass/style.scss */
+  /* line 146, ../sass/style.scss */
   #header #navList .navLink:hover, #header #navList .navLink.clicked {
     background-color: #303F9F;
   }
 }
-/* line 128, ../sass/style.scss */
+/* line 153, ../sass/style.scss */
 #header #navList .navLink:last-child {
   margin-right: 50px;
 }
 @media screen and (max-width: 600px) {
-  /* line 128, ../sass/style.scss */
+  /* line 153, ../sass/style.scss */
   #header #navList .navLink:last-child {
     margin-right: 0;
   }
 }
 @media screen and (max-width: 600px) {
-  /* line 115, ../sass/style.scss */
+  /* line 136, ../sass/style.scss */
   #header #navList .navLink {
     display: block;
     height: 24px;
@@ -141,13 +163,13 @@ footer .contactList {
     padding: 16px 0;
     float: none;
   }
-  /* line 141, ../sass/style.scss */
+  /* line 166, ../sass/style.scss */
   #header #navList .navLink a {
     color: black;
   }
 }
 @media screen and (max-width: 600px) {
-  /* line 109, ../sass/style.scss */
+  /* line 130, ../sass/style.scss */
   #header #navList {
     display: none;
     position: fixed;
@@ -166,12 +188,12 @@ footer .contactList {
     padding: 16px;
     width: 192px;
   }
-  /* line 164, ../sass/style.scss */
+  /* line 189, ../sass/style.scss */
   #header #navList.show {
     display: block;
   }
 }
-/* line 170, ../sass/style.scss */
+/* line 195, ../sass/style.scss */
 #header #mobile-nav {
   height: 50%;
   float: left;
@@ -181,63 +203,64 @@ footer .contactList {
   cursor: pointer;
 }
 @media screen and (max-width: 600px) {
-  /* line 170, ../sass/style.scss */
+  /* line 195, ../sass/style.scss */
   #header #mobile-nav {
     display: block;
   }
 }
 
-/* line 183, ../sass/style.scss */
+/* line 208, ../sass/style.scss */
 .contactList {
   float: right;
   margin: 0;
   height: 100%;
 }
-/* line 187, ../sass/style.scss */
+/* line 212, ../sass/style.scss */
 .contactList .contact {
   height: 100%;
   float: left;
-  width: 25px;
-  padding: 12.5px 10px 12.5px 10px;
+  width: 45px;
   margin: 0;
   position: relative;
   top: 0;
   display: inline-block;
+  margin: 0 10px;
 }
-/* line 197, ../sass/style.scss */
+/* line 222, ../sass/style.scss */
 .contactList .contact img {
   width: 100%;
   vertical-align: middle;
   position: relative;
 }
-/* line 203, ../sass/style.scss */
+/* line 228, ../sass/style.scss */
 .contactList .contact a {
   display: block;
   height: 100%;
+  padding: 12.5px 10px;
 }
-/* line 208, ../sass/style.scss */
+/* line 234, ../sass/style.scss */
 .contactList .contact:hover {
   background-color: #303F9F;
 }
-/* line 212, ../sass/style.scss */
+/* line 238, ../sass/style.scss */
 .contactList .contact:last-child {
   margin-right: 50px;
 }
 @media screen and (max-width: 900px) {
-  /* line 183, ../sass/style.scss */
+  /* line 208, ../sass/style.scss */
   .contactList {
     display: none;
   }
 }
 
-/* line 222, ../sass/style.scss */
+/* line 248, ../sass/style.scss */
 #about {
   background-color: #7986CB;
   width: 100%;
   padding-bottom: 50px;
   min-height: 100vh;
 }
-/* line 228, ../sass/style.scss */
+/* line 254, ../sass/style.scss */
 #about #intro {
   width: 50%;
   position: relative;
@@ -247,16 +270,16 @@ footer .contactList {
   font-size: 1.2rem;
 }
 @media screen and (max-width: 900px) {
-  /* line 228, ../sass/style.scss */
+  /* line 254, ../sass/style.scss */
   #about #intro {
     width: 80%;
   }
 }
-/* line 240, ../sass/style.scss */
+/* line 266, ../sass/style.scss */
 #about img {
   width: 100%;
 }
-/* line 244, ../sass/style.scss */
+/* line 270, ../sass/style.scss */
 #about .imgContainer {
   margin: auto;
   width: 20%;
@@ -264,20 +287,20 @@ footer .contactList {
   position: relative;
 }
 @media screen and (max-width: 900px) {
-  /* line 244, ../sass/style.scss */
+  /* line 270, ../sass/style.scss */
   #about .imgContainer {
     width: 180px;
   }
 }
 
-/* line 256, ../sass/style.scss */
+/* line 282, ../sass/style.scss */
 #experience {
   background-color: #3F51B5;
   width: 100%;
   height: 100vh;
 }
 
-/* line 262, ../sass/style.scss */
+/* line 288, ../sass/style.scss */
 #projects {
   background-color: #B6B6B6;
   background-image: url(../images/crossword.png);
@@ -286,14 +309,14 @@ footer .contactList {
   padding-top: 5%;
   position: relative;
 }
-/* line 272, ../sass/style.scss */
+/* line 298, ../sass/style.scss */
 #projects ul {
   width: 80%;
   margin: auto;
   padding: 0;
   overflow: auto;
 }
-/* line 278, ../sass/style.scss */
+/* line 304, ../sass/style.scss */
 #projects .project {
   width: 30%;
   margin: 1.5%;
@@ -304,36 +327,36 @@ footer .contactList {
   overflow: hidden;
   padding-bottom: 16px;
 }
-/* line 289, ../sass/style.scss */
+/* line 315, ../sass/style.scss */
 #projects .project img {
   width: 100%;
 }
-/* line 293, ../sass/style.scss */
+/* line 319, ../sass/style.scss */
 #projects .project h3 {
   color: #000A14;
   line-height: 1rem;
   margin-left: 16px;
   font-weight: 100;
 }
-/* line 300, ../sass/style.scss */
+/* line 326, ../sass/style.scss */
 #projects .project h4 {
   color: #000A14;
   font-style: italic;
   line-height: 1rem;
   margin: 10px;
 }
-/* line 312, ../sass/style.scss */
+/* line 338, ../sass/style.scss */
 #projects .project a {
   margin-left: 16px;
 }
 @media screen and (max-width: 900px) {
-  /* line 278, ../sass/style.scss */
+  /* line 304, ../sass/style.scss */
   #projects .project {
     width: 47%;
   }
 }
 @media screen and (max-width: 600px) {
-  /* line 278, ../sass/style.scss */
+  /* line 304, ../sass/style.scss */
   #projects .project {
     width: 100%;
     margin-left: 0;
@@ -341,27 +364,27 @@ footer .contactList {
   }
 }
 
-/* line 328, ../sass/style.scss */
+/* line 354, ../sass/style.scss */
 .primary {
   color: #3F51B5;
 }
 
-/* line 332, ../sass/style.scss */
+/* line 358, ../sass/style.scss */
 .bold {
   font-weight: bold;
 }
 
-/* line 336, ../sass/style.scss */
+/* line 362, ../sass/style.scss */
 .under {
   text-decoration: underline;
 }
 
-/* line 340, ../sass/style.scss */
+/* line 366, ../sass/style.scss */
 .circle {
   border-radius: 50%;
 }
 
-/* line 345, ../sass/style.scss */
+/* line 371, ../sass/style.scss */
 .project-desc {
   width: 100%;
   min-height: 100vh;
@@ -371,12 +394,12 @@ footer .contactList {
   box-sizing: border-box;
   overflow: hidden;
 }
-/* line 354, ../sass/style.scss */
+/* line 380, ../sass/style.scss */
 .project-desc .container {
   width: 100%;
   height: 100%;
 }
-/* line 358, ../sass/style.scss */
+/* line 384, ../sass/style.scss */
 .project-desc .container .desc-text {
   padding: 16px;
   border-radius: 2px;
@@ -386,14 +409,14 @@ footer .contactList {
   display: inline-block;
 }
 @media screen and (max-width: 900px) {
-  /* line 358, ../sass/style.scss */
+  /* line 384, ../sass/style.scss */
   .project-desc .container .desc-text {
     width: 100%;
     margin: auto;
     box-sizing: border-box;
   }
 }
-/* line 375, ../sass/style.scss */
+/* line 401, ../sass/style.scss */
 .project-desc .container .desc-pictures {
   width: 45%;
   height: 100%;
@@ -401,12 +424,12 @@ footer .contactList {
   float: right;
   margin: auto;
 }
-/* line 383, ../sass/style.scss */
+/* line 409, ../sass/style.scss */
 .project-desc .container .desc-pictures .frame {
   float: left;
   margin-bottom: 10px;
 }
-/* line 389, ../sass/style.scss */
+/* line 415, ../sass/style.scss */
 .project-desc .container .desc-pictures img {
   width: 100%;
   height: 100%;
@@ -415,7 +438,7 @@ footer .contactList {
   left: 0;
 }
 @media screen and (max-width: 900px) {
-  /* line 375, ../sass/style.scss */
+  /* line 401, ../sass/style.scss */
   .project-desc .container .desc-pictures {
     width: 100%;
     float: none;
@@ -423,18 +446,18 @@ footer .contactList {
     margin-top: 20px;
   }
 }
-/* line 406, ../sass/style.scss */
+/* line 432, ../sass/style.scss */
 .project-desc h1 {
   color: #212121;
   font-size: 20px;
 }
-/* line 411, ../sass/style.scss */
+/* line 437, ../sass/style.scss */
 .project-desc p {
   color: #727272;
   font-size: 14px;
 }
 
-/* line 417, ../sass/style.scss */
+/* line 443, ../sass/style.scss */
 .buttons {
   margin-top: 5px;
   height: 48px;
@@ -442,7 +465,7 @@ footer .contactList {
   display: table-cell;
   margin-left: -12px;
 }
-/* line 424, ../sass/style.scss */
+/* line 450, ../sass/style.scss */
 .buttons a {
   padding: 0 8px 0 0;
   margin: 0 4px 0 0;
@@ -452,7 +475,7 @@ footer .contactList {
   vertical-align: middle;
   display: table-cell;
 }
-/* line 433, ../sass/style.scss */
+/* line 459, ../sass/style.scss */
 .buttons a.mid {
   padding-left: 8px;
   margin-left: 4px;
