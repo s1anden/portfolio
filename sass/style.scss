@@ -183,7 +183,9 @@ footer {
 .contactList {
 	float:right;
 	margin:0;
+  height:100%;
 	.contact {
+    height:100%;
 		float:left;
 		width:25px;
 		padding: $nav-padding;
@@ -193,13 +195,14 @@ footer {
 		display:inline-block;
 		// cursor:pointer;
 		img {
-			height:50%;
+			width:100%;
 			vertical-align:middle;
 			position:relative;
 		}
 
 		a {
 			display:block;
+      height:100%;
 		}
 
 		&:hover {
