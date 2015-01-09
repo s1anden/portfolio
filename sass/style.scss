@@ -63,10 +63,6 @@ footer {
     position:relative;
     top:20px;
   }
-
-  .contactList {
-    display:none;
-  }
 }
 
 .border {
@@ -120,93 +116,94 @@ footer {
     box-sizing:border-box;
     -webkit-box-sizing:border-box;
     -moz-box-sizing:border-box;
+	}
+}
 
-    &#name {
-      &:hover, &.clicked {
-        @media screen and (min-width: $break-small) {
-          background-color: $primary-color-dark;
-        }
-
-      }
+#name {
+  &:hover, &.clicked {
+    @media screen and (min-width: $break-small) {
+      background-color: $primary-color-dark;
     }
-	}
 
-	#navList {
-		float:right;
-		margin:0;
-		@media screen and (min-width: $break-small) {
-			height:100%;
-		}
-		.navLink {
-			float:left;
-			margin: 0 30px 0 30px;
-      height:100%;
+  }
+}
 
-      a {
-        line-height: 25px;
-        padding: $nav-padding;
-      }
+#navList {
+  float:right;
+  margin:0;
+  @media screen and (min-width: $break-small) {
+    height:100%;
+  }
+  @media screen and (max-width: $break-small) {
+    display:none;
+    position:fixed;
+    left:45px;
+    top:12.5px;
+    background-color: white;
+    color:rgba(0,0,0,0.87);
+    z-index: 999999;
+    text-align: left;
+    box-shadow: -1px -1px 4px rgba(49, 49, 64, 0.8);
+    -webkit-box-shadow: -1px -1px 4px rgba(49, 49, 64, 0.8);
+    -moz-box-shadow: -1px -1px 4px rgba(49, 49, 64, 0.8);
+    border-radius: 1px;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    padding:16px;
+    width:192px;
 
-			&:hover, &.clicked {
-				@media screen and (min-width: $break-small) {
-					background-color: $primary-color-dark;
-				}
+    &.show {
+      display:block;
+    }
+  }
+}
 
-			}
+.navLink {
+  float:left;
+  margin: 0 30px 0 30px;
+  height:100%;
 
-			&:last-child {
-				margin-right: 50px;
-				@media screen and (max-width: $break-small) {
-					margin-right: 0;
-				}
-			}
+  a {
+    line-height: 25px;
+    padding: $nav-padding;
+  }
 
-			@media screen and (max-width: $break-small) {
-				display:block;
-				height:24px;
-				margin:0;
-				padding:16px 0;
-				float:none;
-				a {
-					color:black;
-				}
-			}
-		}
-		@media screen and (max-width: $break-small) {
-			display:none;
-			position:fixed;
-			left:45px;
-			top:12.5px;
-			background-color: white;
-			color:rgba(0,0,0,0.87);
-			z-index: 999999;
-			text-align: left;
-			box-shadow: -1px -1px 4px rgba(49, 49, 64, 0.8);
-			-webkit-box-shadow: -1px -1px 4px rgba(49, 49, 64, 0.8);
-			-moz-box-shadow: -1px -1px 4px rgba(49, 49, 64, 0.8);
-			border-radius: 1px;
-			-webkit-border-radius: 1px;
-			-moz-border-radius: 1px;
-			padding:16px;
-			width:192px;
+  &:hover, &.clicked {
+    @media screen and (min-width: $break-small) {
+      background-color: $primary-color-dark;
+    }
 
-			&.show {
-				display:block;
-			}
-		}
-	}
+  }
 
-	#mobile-nav {
-		height:50%;
-		float:left;
-		position:relative;
-		padding: 12.5px;
-		display:none;
-		@media screen and (max-width: $break-small) {
-			display:block;
-		}
-		cursor:pointer;
-	}
+  &:last-child {
+    margin-right: 50px;
+    @media screen and (max-width: $break-small) {
+      margin-right: 0;
+    }
+  }
+
+  @media screen and (max-width: $break-small) {
+    display:block;
+    height:24px;
+    margin:0;
+    padding:16px 0;
+    float:none;
+    a {
+      color:black;
+    }
+  }
+}
+
+#mobile-nav {
+  height:50%;
+  float:left;
+  position:relative;
+  padding: 12.5px;
+  display:none;
+  @media screen and (max-width: $break-small) {
+    display:block;
+  }
+  cursor:pointer;
 }
 
 .contactList {
@@ -255,32 +252,32 @@ footer {
 	padding-bottom: 50px;
 	min-height:100vh;
 
-	#intro {
-		width:50%;
-		position:relative;
-		// top:25%;
-		padding-top:125px;
-		margin-left:auto; margin-right:auto;
-		font-size:1.2rem;
-		@media screen and (max-width: $break-medium) {
-			width:80%;
-		}
-	}
-
 	img {
 		width:100%
 	}
+}
 
-	.imgContainer {
-		margin:auto;
-		width:20%;
-		// top:27%;
-		margin-top:50px;
-		position: relative;
-		@media screen and (max-width: $break-medium) {
-			width:180px;
-		}
-	}
+.imgContainer {
+  margin:auto;
+  width:20%;
+  // top:27%;
+  margin-top:50px;
+  position: relative;
+  @media screen and (max-width: $break-medium) {
+    width:180px;
+  }
+}
+
+#intro {
+  width:50%;
+  position:relative;
+  // top:25%;
+  padding-top:125px;
+  margin-left:auto; margin-right:auto;
+  font-size:1.2rem;
+  @media screen and (max-width: $break-medium) {
+    width:80%;
+  }
 }
 
 #experience {
@@ -305,54 +302,50 @@ footer {
 		padding:0;
 		overflow:auto;
 	}
-	.project {
-		@extend .card-shadow;
-		width:30%;
-		margin:1.5%;
-		float:left;
-		margin-bottom: 40px;
-		border-radius:2px;
-		background-color:$white;
-		overflow:hidden;
-		padding-bottom:16px;
+}
 
-		img {
-			width:100%;
-		}
+.project {
+  @extend .card-shadow;
+  width:30%;
+  margin:1.5%;
+  float:left;
+  margin-bottom: 40px;
+  border-radius:2px;
+  background-color:$white;
+  overflow:hidden;
+  padding-bottom:16px;
 
-		h3 {
-			color:$black;
-			line-height: 1rem;
-			margin-left: 16px;
-			font-weight: 100;
-		}
+  img {
+    width:100%;
+  }
 
-		h4 {
-			color:$black;
-			font-style: italic;
-			line-height: 1rem;
-			margin:10px;
-			// float:left;
-		}
+  h3 {
+    color:$black;
+    line-height: 1rem;
+    margin-left: 16px;
+    font-weight: 100;
+  }
 
-		// .expand-proj {
-		// 	display:none;
-		// }
+  h4 {
+    color:$black;
+    font-style: italic;
+    line-height: 1rem;
+    margin:10px;
+  }
 
-		a {
-			margin-left: 16px;
-		}
+  a {
+    margin-left: 16px;
+  }
 
-		@media screen and (max-width:$break-medium) {
-			width:47%;
-		}
+  @media screen and (max-width:$break-medium) {
+    width:47%;
+  }
 
-		@media screen and (max-width:$break-small) {
-			width:100%;
-			margin-left:0;
-			margin-right: 0;
-		}
-	}
+  @media screen and (max-width:$break-small) {
+    width:100%;
+    margin-left:0;
+    margin-right: 0;
+  }
 }
 
 .primary {
@@ -384,53 +377,6 @@ footer {
 	.container {
 		width:100%;
 		height:100%;
-
-		.desc-text {
-			@extend .card-shadow;
-			padding:16px;
-			border-radius:2px;
-			width:45%;
-			// height:100%;
-			margin-right:5%;
-			background-color:$white;
-			display: inline-block;
-
-			@media screen and (max-width: $break-medium) {
-				width:100%;
-				margin:auto;
-				box-sizing:border-box;
-			}
-		}
-
-		.desc-pictures {
-			width:45%;
-			// margin-left:5%;
-			height:100%;
-			display: inline-block;
-			float:right;
-      margin:auto;
-
-      .frame {
-        float:left;
-        @extend .card-shadow;
-        margin-bottom: 10px;
-      }
-
-			img {
-				width:100%;
-				height:100%;
-				position:relative;
-				top:0;
-				left:0;
-			}
-
-			@media screen and (max-width: $break-medium) {
-				width:100%;
-				float:none;
-				margin:auto;
-				margin-top: 20px;
-			}
-		}
 	}
 
 	h1 {
@@ -442,6 +388,53 @@ footer {
 		color: $secondary-text;
 		font-size: 14px;
 	}
+}
+
+.desc-text {
+  @extend .card-shadow;
+  padding:16px;
+  border-radius:2px;
+  width:45%;
+  // height:100%;
+  margin-right:5%;
+  background-color:$white;
+  display: inline-block;
+
+  @media screen and (max-width: $break-medium) {
+    width:100%;
+    margin:auto;
+    box-sizing:border-box;
+  }
+}
+
+.desc-pictures {
+  width:45%;
+  // margin-left:5%;
+  height:100%;
+  display: inline-block;
+  float:right;
+  margin:auto;
+
+  img {
+    width:100%;
+    height:100%;
+    position:relative;
+    top:0;
+    left:0;
+  }
+
+  @media screen and (max-width: $break-medium) {
+    width:100%;
+    float:none;
+    margin:auto;
+    margin-top: 20px;
+  }
+}
+
+.frame {
+  float:left;
+  @extend .card-shadow;
+  margin-bottom: 10px;
 }
 
 .buttons {
@@ -459,10 +452,10 @@ footer {
 		text-align: center;
 		vertical-align: middle;
 		display: table-cell;
-
-		&.mid {
-			padding-left:8px;
-			margin-left:4px;
-		}
 	}
+}
+
+.mid {
+  padding-left:8px;
+  margin-left:4px;
 }
