@@ -41,6 +41,7 @@ $(function() {
 	});
 
 	$(".expand-proj").click(function(e) {
+		$(currProj).find('.desc-pictures').empty();
 		$(currProj).slideUp();
 		currProj = "#" + $(this).parents("li.project").first().data("proj");
 		$(currProj).slideDown();
@@ -55,6 +56,8 @@ $(function() {
 			generateGallery(currProj);
 		}
 	});
+
+	$(".fancybox").fancybox({padding:0, margin:[100,20,20,20]});
 });
 
 // Close navList if click outside div
@@ -109,8 +112,9 @@ function generateGallery(project) {
   // Add all of the images to the gallery
   rows.forEach(function(row, rowIndex) {
 	row.forEach(function(image, imgIndex) {
+		var pathname = images[project].dir + images[project].images[index];
 	  gallery.append("<div style='width:" + (image.width) + "px; height:" + (image.height) + "px; margin-bottom:10px;' class='frame'></div>")
-	  gallery.find(".frame").last().append("<img src='" + images[project].dir + images[project].images[index] + "' />");
+	  gallery.find(".frame").last().append("<a class='fancybox' rel='group' href='" + pathname + "'><img src='" + pathname + "' /></a>");
 
 	  if (imgIndex != 0) {
 	    gallery.find(".frame").last().css("margin-left", "9px");
