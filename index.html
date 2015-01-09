@@ -1,15 +1,14 @@
 <html>
 <head>
+	<base target="_blank">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<link rel="stylesheet" type="text/css" href="bower_components/normalize.css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oswald">
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:200,300,400,500,600">
 	<link rel="icon" type="image/png" href="images/favicon.png">
-
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script src="js/scripts.js"></script>
-
 	<title>Samantha Landen</title>
 </head>
 <body>
@@ -20,17 +19,17 @@
 		<ul id="contactList">
 			<!-- Icons courtesy of @danleech -->
 			<li id="email" class="contact">
-				<a href="mailto:samantha.landen@gmail.com">
+				<a href="mailto:samantha.landen@gmail.com" target="_self">
 					<img src="images/icons/gmail.png" />
 				</a>
 			</li>
 			<li id="linkedin" class="contact">
-				<a href="https://www.linkedin.com/pub/samantha-landen/60/52b/477" target="_blank">
+				<a href="https://www.linkedin.com/pub/samantha-landen/60/52b/477">
 					<img src="images/icons/linkedin.png" />
 				</a>
 			</li>
-			<li id="github" class="contact last">
-				<a href="https://github.com/s1anden" target="_blank">
+			<li id="github" class="contact">
+				<a href="https://github.com/s1anden">
 					<img src="images/icons/github.png" />
 				</a>
 			</li>
@@ -38,12 +37,12 @@
 
 		<ul id="navList">
 			<li class="navLink">
-				<a href="#about">
+				<a href="#about" target="_self">
 					About
 				</a>
 			</li>
-			<li class="navLink last">
-				<a href="#projects">
+			<li class="navLink">
+				<a href="#projects" target="_self">
 					Projects
 				</a>
 			</li>
@@ -144,7 +143,6 @@
 			</div>
 
 			<div class="desc-pictures">
-				<img src="images/femivin.jpg" />
 			</div>
 		</div>
 	</div>
@@ -166,7 +164,6 @@
 			</div>
 
 			<div class="desc-pictures">
-				<img src="images/yelp.jpg" />
 			</div>
 		</div>
 	</div>
@@ -185,7 +182,6 @@
 			</div>
 
 			<div class="desc-pictures">
-				<img src="images/amazon.jpg" />
 			</div>
 		</div>
 	</div>
@@ -202,13 +198,9 @@
 				<p>We used Ruby on Rails to create a fully customized registration system for participants, in addition to an administrative backend that allows Tasha to easily gather all of the information she needs. Finally, we used 123ContactForm to build an anonymized survey system for demographic data.</p>
 
 				<p>Worked with: <a href="http://kevin-louie.squarespace.com/">Kevin Louie</a>, <a href="https://www.linkedin.com/pub/dima-yurkanskiy/89/b59/bbb">Dima Yurkanskiy</a>, <a href="https://www.linkedin.com/in/shaundford">Shaun Ford</a></p>
-
-				<p class="buttons"><a href="http://project-chuck.herokuapp.com/">SEE THE SITE</a></p>
-
 			</div>
 
 			<div class="desc-pictures">
-				<img src="images/chuck.jpg" />
 			</div>
 		</div>
 	</div>
@@ -227,7 +219,6 @@
 			</div>
 
 			<div class="desc-pictures">
-				<img src="images/ridealong.jpg" />
 			</div>
 		</div>
 	</div>
@@ -246,7 +237,6 @@
 			</div>
 
 			<div class="desc-pictures">
-				<img src="images/spotify.jpg" />
 			</div>
 		</div>
 	</div>
@@ -291,5 +281,10 @@
 			</li>
 		</ul>
 	</footer>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="fancybox/jquery.fancybox.pack.js"></script>
+	<script src="js/gallery.js"></script>
+	<script src="js/scripts.js"></script>
 </body>
 </html>
