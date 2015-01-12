@@ -14,9 +14,9 @@
 	<title>Samantha Landen</title>
 </head>
 <body>
-	<nav id="header" role="navigation">
+	<header id="header" role="banner">
 		<img id="mobile-nav" src="images/menu-08.png" />
-		<a href="#about" id="name"><h1>SAMANTHA LANDEN</h1></a>
+		<h1><a href="#about" id="name">SAMANTHA LANDEN</a></h1>
 
 		<ul class="contactList">
 			<!-- Icons courtesy of @danleech -->
@@ -37,79 +37,78 @@
 			</li>
 		</ul>
 
-		<ul id="navList">
-			<li class="navLink">
-				<a href="#about" target="_self">
-					About
-				</a>
-			</li>
-			<li class="navLink">
-				<a href="#projects" target="_self">
-					Projects
-				</a>
-			</li>
-		</ul>
-	</nav>
+		<nav id="navList">
+			<h1 class="hidden">Navigation</h1>
+			<a href="#about" class="navLink" target="_self">
+				About
+			</a>
+			<a href="#projects" class="navLink" target="_self">
+				Projects
+			</a>
+		</nav>
+	</header>
 
 
-	<div id="about">
+	<section id="about">
+		<h1 class="hidden">About Me</h1>
 		<div id="intro"><p>Hi, my name is <span class="bold">Samantha Landen</span>. I'm a senior at Carnegie Mellon University majoring in Information Systems and Human-Computer Interaction. I love web development, UX design, and music. Take a look around; if you like what you see and want to chat, shoot me an email at <span class="bold">samanthalanden (at) gmail (dot) com</span>.</p></div>
 
 		<div class="imgContainer">
 			<img class="circle" src="images/me.jpg" />
 		</div>
 
-	</div>
+	</section>
 
-	<div id="projects">
+	<section id="projects">
+		<h1 class="hidden">My Work</h1>
 		<!-- Image courtesy of Laurent Patain at The Noun Project -->
 		<ul>
 			<li class="project" data-proj="femivin">
-				<div class="project-content">
+				<article class="project-content">
 					<img src="images/femivin.jpg" />
 					<h3>Femivin La Boutique</h3>
 					<a href="#placeholder" class="expand-proj">SEE MORE</a>
-				</div>
+				</article>
 			</li>
 
 			<li class="project" data-proj="yelp">
-				<div class="project-content">
+				<article class="project-content">
 					<img src="images/yelp.jpg" />
 					<h3>Yelp Onboarding</h3>
 					<a href="#placeholder" class="expand-proj">SEE MORE</a>
-				</div>
+				</article>
 			</li>
 
 			<li class="project" data-proj="amazon">
-				<div class="project-content">
+				<article class="project-content">
 					<img src="images/amazon.jpg" />
 					<h3>Amazon.com</h3>
 					<a href="#placeholder" class="expand-proj">SEE MORE</a>
-				</div>
+				</article>
 			</li>
 
 			<li class="project" data-proj="chuck">
-				<div class="project-content">
+				<article class="project-content">
 					<img src="images/chuck.jpg" />
 					<h3>Project C.H.U.C.K.</h3>
 					<a href="#placeholder" class="expand-proj">SEE MORE</a>
-				</div>
+				</article>
 			</li>
 
 			<li class="project" data-proj="ridealong">
-				<div class="project-content">
+				<article class="project-content">
 					<img src="images/ridealong.jpg" />
 					<h3>RideAlong</h3>
 					<a href="#placeholder" class="expand-proj">SEE MORE</a>
-				</div>
+				</article>
 			</li>
 
 			<li class="project" data-proj="spotify">
-				<div class="project-content">
+				<article class="project-content">
 					<img src="images/spotify.jpg" />
 					<h3>Spotify Reviews</h3>
 					<a href="#placeholder" class="expand-proj">SEE MORE</a>
-				</div>
+				</article>
 			</li>
 
 			<!-- <li class="project">
@@ -124,10 +123,12 @@
 				<h4>Rails App</h4>
 			</li> -->
 		</ul>
-	</div>
+	</section>
 
 	<div id="placeholder"></div>
-	<div class="project-desc" id="femivin">
+	<section>
+		<h1 class="hidden">View More</h1>
+	<article class="project-desc" id="femivin">
 		<div class="container">
 			<div class="desc-text">
 				<h1>Femivin La Boutique</h1>
@@ -147,9 +148,9 @@
 			<div class="desc-pictures">
 			</div>
 		</div>
-	</div>
+	</article>
 
-	<div class="project-desc" id="yelp">
+	<article class="project-desc" id="yelp">
 		<div class="container">
 			<div class="desc-text">
 				<h1>Yelp Onboarding</h1>
@@ -168,9 +169,9 @@
 			<div class="desc-pictures">
 			</div>
 		</div>
-	</div>
+	</article>
 
-	<div class="project-desc" id="amazon">
+	<article class="project-desc" id="amazon">
 		<div class="container">
 			<div class="desc-text">
 				<h1>Amazon.com: Kindle Team</h1>
@@ -186,9 +187,9 @@
 			<div class="desc-pictures">
 			</div>
 		</div>
-	</div>
+	</article>
 
-	<div class="project-desc" id="chuck">
+	<article class="project-desc" id="chuck">
 		<div class="container">
 			<div class="desc-text">
 				<h1>Project C.H.U.C.K. Registration</h1>
@@ -205,9 +206,9 @@
 			<div class="desc-pictures">
 			</div>
 		</div>
-	</div>
+	</article>
 
-	<div class="project-desc" id="ridealong">
+	<article class="project-desc" id="ridealong">
 		<div class="container">
 			<div class="desc-text">
 				<h1>RideAlong Mobile App Design</h1>
@@ -223,9 +224,9 @@
 			<div class="desc-pictures">
 			</div>
 		</div>
-	</div>
+	</article>
 
-	<div class="project-desc" id="spotify">
+	<article class="project-desc" id="spotify">
 		<div class="container">
 			<div class="desc-text">
 				<h1>Spotify Reviews</h1>
@@ -241,7 +242,8 @@
 			<div class="desc-pictures">
 			</div>
 		</div>
-	</div>
+	</article>
+	</section>
 
 	<footer role="contentinfo">
 		<p id="copy">&copy; 2015 Samantha Landen</p>
