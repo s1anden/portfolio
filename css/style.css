@@ -1,63 +1,1242 @@
-/*
-Error: File to import not found or unreadable: bourbon/bourbon.
-       Load paths:
-         Compass::SpriteImporter
-         /Users/slanden/Documents/F14/portfolio/sass
-         /Users/slanden/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.1/stylesheets
-        on line 1 of /Users/slanden/Documents/F14/portfolio/./sass/style.scss
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 12, ../sass/style.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
 
-1: @import "bourbon/bourbon";
-2: 
-3: // normalize.css content
-4: /*! normalize.css v3.0.2 | MIT License | git.io/normalize *\/
-5: 
-6: /**
+/**
+ * Remove default margin.
+ */
+/* line 22, ../sass/style.scss */
+body {
+  margin: 0;
+}
 
-Backtrace:
-/Users/slanden/Documents/F14/portfolio/./sass/style.scss:1
-/Users/slanden/.rvm/gems/ruby-2.1.2/gems/sass-3.4.9/lib/sass/tree/import_node.rb:66:in `rescue in import'
-/Users/slanden/.rvm/gems/ruby-2.1.2/gems/sass-3.4.9/lib/sass/tree/import_node.rb:45:in `import'
-/Users/slanden/.rvm/gems/ruby-2.1.2/gems/sass-3.4.9/lib/sass/tree/import_node.rb:28:in `imported_file'
-/Users/slanden/.rvm/gems/ruby-2.1.2/gems/sass-3.4.9/lib/sass/tree/import_node.rb:37:in `css_import?'
-/Users/slanden/.rvm/gems/ruby-2.1.2/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:301:in `visit_import'
-/Users/slanden/.rvm/gems/ruby-2.1.2/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/slanden/.rvm/gems/ruby-2.1.2/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Users/slanden/.rvm/gems/ruby-2.1.2/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
-/Users/slanden/.rvm/gems/ruby-2.1.2/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
-/Users/slanden/.rvm/gems/ruby-2.1.2/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
-/Users/slanden/.rvm/gems/ruby-2.1.2/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Users/slanden/.rvm/gems/ruby-2.1.2/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Users/slanden/.rvm/gems/ruby-2.1.2/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `map'
-/Users/slanden/.rvm/gems/ruby-2.1.2/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Users/slanden/.rvm/gems/ruby-2.1.2/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/Users/slanden/.rvm/gems/ruby-2.1.2/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Users/slanden/.rvm/gems/ruby-2.1.2/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/Users/slanden/.rvm/gems/ruby-2.1.2/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Users/slanden/.rvm/gems/ruby-2.1.2/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/Users/slanden/.rvm/gems/ruby-2.1.2/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/slanden/.rvm/gems/ruby-2.1.2/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/Users/slanden/.rvm/gems/ruby-2.1.2/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Users/slanden/.rvm/gems/ruby-2.1.2/gems/sass-3.4.9/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Users/slanden/.rvm/gems/ruby-2.1.2/gems/sass-3.4.9/lib/sass/tree/root_node.rb:20:in `render'
-/Users/slanden/.rvm/gems/ruby-2.1.2/gems/sass-3.4.9/lib/sass/engine.rb:268:in `render'
-/Users/slanden/.rvm/gems/ruby-2.1.2/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
-/Users/slanden/.rvm/gems/ruby-2.1.2/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
-/Users/slanden/.rvm/gems/ruby-2.1.2/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
-/Users/slanden/.rvm/gems/ruby-2.1.2/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/Users/slanden/.rvm/gems/ruby-2.1.2/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Users/slanden/.rvm/gems/ruby-2.1.2/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:209:in `each'
-/Users/slanden/.rvm/gems/ruby-2.1.2/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Users/slanden/.rvm/gems/ruby-2.1.2/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
-/Users/slanden/.rvm/gems/ruby-2.1.2/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:328:in `block in watch'
-/Users/slanden/.rvm/gems/ruby-2.1.2/gems/sass-3.4.9/vendor/listen/lib/listen/listener.rb:252:in `call'
-/Users/slanden/.rvm/gems/ruby-2.1.2/gems/sass-3.4.9/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/Users/slanden/.rvm/gems/ruby-2.1.2/gems/sass-3.4.9/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Users/slanden/.rvm/gems/ruby-2.1.2/gems/sass-3.4.9/vendor/listen/lib/listen/adapter.rb:254:in `call'
-/Users/slanden/.rvm/gems/ruby-2.1.2/gems/sass-3.4.9/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
-/Users/slanden/.rvm/gems/ruby-2.1.2/gems/sass-3.4.9/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
-/Users/slanden/.rvm/gems/ruby-2.1.2/gems/sass-3.4.9/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: bourbon/bourbon.\A        Load paths:\A          Compass::SpriteImporter\A          /Users/slanden/Documents/F14/portfolio/sass\A          /Users/slanden/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.1/stylesheets\A         on line 1 of /Users/slanden/Documents/F14/portfolio/./sass/style.scss\A \A 1: @import \"bourbon/bourbon\";\A 2: \A 3: // normalize.css content\A 4: /*! normalize.css v3.0.2 | MIT License | git.io/normalize */\A 5: \A 6: /**"; }
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 36, ../sass/style.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 57, ../sass/style.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 70, ../sass/style.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+/* line 80, ../sass/style.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 92, ../sass/style.scss */
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 100, ../sass/style.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 112, ../sass/style.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 120, ../sass/style.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 129, ../sass/style.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 138, ../sass/style.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 147, ../sass/style.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 156, ../sass/style.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 164, ../sass/style.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 172, ../sass/style.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 176, ../sass/style.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 187, ../sass/style.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 195, ../sass/style.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 206, ../sass/style.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 214, ../sass/style.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 224, ../sass/style.scss */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 232, ../sass/style.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 255, ../sass/style.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 269, ../sass/style.scss */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 280, ../sass/style.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 293, ../sass/style.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 305, ../sass/style.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 314, ../sass/style.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 325, ../sass/style.scss */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 337, ../sass/style.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 349, ../sass/style.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 360, ../sass/style.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 373, ../sass/style.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 382, ../sass/style.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 393, ../sass/style.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 402, ../sass/style.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 411, ../sass/style.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 422, ../sass/style.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 427, ../sass/style.scss */
+td,
+th {
+  padding: 0;
+}
+
+/*! fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
+/* line 435, ../sass/style.scss */
+.fancybox-wrap,
+.fancybox-skin,
+.fancybox-outer,
+.fancybox-inner,
+.fancybox-image,
+.fancybox-wrap iframe,
+.fancybox-wrap object,
+.fancybox-nav,
+.fancybox-nav span,
+.fancybox-tmp {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none;
+  vertical-align: top;
+}
+
+/* line 453, ../sass/style.scss */
+.fancybox-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 8020;
+}
+
+/* line 460, ../sass/style.scss */
+.fancybox-skin {
+  position: relative;
+  background: #f9f9f9;
+  color: #444;
+  text-shadow: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+/* line 470, ../sass/style.scss */
+.fancybox-opened {
+  z-index: 8030;
+}
+
+/* line 474, ../sass/style.scss */
+.fancybox-opened .fancybox-skin {
+  -webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* line 480, ../sass/style.scss */
+.fancybox-outer, .fancybox-inner {
+  position: relative;
+}
+
+/* line 484, ../sass/style.scss */
+.fancybox-inner {
+  overflow: hidden;
+}
+
+/* line 488, ../sass/style.scss */
+.fancybox-type-iframe .fancybox-inner {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* line 492, ../sass/style.scss */
+.fancybox-error {
+  color: #444;
+  font: 14px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0;
+  padding: 15px;
+  white-space: nowrap;
+}
+
+/* line 500, ../sass/style.scss */
+.fancybox-image, .fancybox-iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 506, ../sass/style.scss */
+.fancybox-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* line 511, ../sass/style.scss */
+#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
+  background-image: url("fancybox_sprite.png");
+}
+
+/* line 515, ../sass/style.scss */
+#fancybox-loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -22px;
+  margin-left: -22px;
+  background-position: 0 -108px;
+  opacity: 0.8;
+  cursor: pointer;
+  z-index: 8060;
+}
+
+/* line 527, ../sass/style.scss */
+#fancybox-loading div {
+  width: 44px;
+  height: 44px;
+  background: url("fancybox_loading.gif") center center no-repeat;
+}
+
+/* line 533, ../sass/style.scss */
+.fancybox-close {
+  position: absolute;
+  top: -18px;
+  right: -18px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  z-index: 8040;
+}
+
+/* line 543, ../sass/style.scss */
+.fancybox-nav {
+  position: absolute;
+  top: 0;
+  width: 40%;
+  height: 100%;
+  cursor: pointer;
+  text-decoration: none;
+  background: transparent url("blank.gif");
+  /* helps IE */
+  -webkit-tap-highlight-color: transparent;
+  z-index: 8040;
+}
+
+/* line 555, ../sass/style.scss */
+.fancybox-prev {
+  left: 0;
+}
+
+/* line 559, ../sass/style.scss */
+.fancybox-next {
+  right: 0;
+}
+
+/* line 563, ../sass/style.scss */
+.fancybox-nav span {
+  position: absolute;
+  top: 50%;
+  width: 36px;
+  height: 34px;
+  margin-top: -18px;
+  cursor: pointer;
+  z-index: 8040;
+  visibility: hidden;
+}
+
+/* line 574, ../sass/style.scss */
+.fancybox-prev span {
+  left: 10px;
+  background-position: 0 -36px;
+}
+
+/* line 579, ../sass/style.scss */
+.fancybox-next span {
+  right: 10px;
+  background-position: 0 -72px;
+}
+
+/* line 584, ../sass/style.scss */
+.fancybox-nav:hover span {
+  visibility: visible;
+}
+
+/* line 588, ../sass/style.scss */
+.fancybox-tmp {
+  position: absolute;
+  top: -99999px;
+  left: -99999px;
+  visibility: hidden;
+  max-width: 99999px;
+  max-height: 99999px;
+  overflow: visible !important;
+}
+
+/* Overlay helper */
+/* line 600, ../sass/style.scss */
+.fancybox-lock {
+  overflow: hidden !important;
+  width: auto;
+}
+
+/* line 605, ../sass/style.scss */
+.fancybox-lock body {
+  overflow: hidden !important;
+}
+
+/* line 609, ../sass/style.scss */
+.fancybox-lock-test {
+  overflow-y: hidden !important;
+}
+
+/* line 613, ../sass/style.scss */
+.fancybox-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  display: none;
+  z-index: 8010;
+  background: url("fancybox_overlay.png");
+}
+
+/* line 623, ../sass/style.scss */
+.fancybox-overlay-fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+/* line 629, ../sass/style.scss */
+.fancybox-lock .fancybox-overlay {
+  overflow: auto;
+  overflow-y: scroll;
+}
+
+/* Title helper */
+/* line 636, ../sass/style.scss */
+.fancybox-title {
+  visibility: hidden;
+  font: normal 13px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+  position: relative;
+  text-shadow: none;
+  z-index: 8050;
+}
+
+/* line 644, ../sass/style.scss */
+.fancybox-opened .fancybox-title {
+  visibility: visible;
+}
+
+/* line 648, ../sass/style.scss */
+.fancybox-title-float-wrap {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  margin-bottom: -35px;
+  z-index: 8050;
+  text-align: center;
+}
+
+/* line 657, ../sass/style.scss */
+.fancybox-title-float-wrap .child {
+  display: inline-block;
+  margin-right: -100%;
+  padding: 2px 20px;
+  background: transparent;
+  /* Fallback for web browsers that doesn't support RGBa */
+  background: rgba(0, 0, 0, 0.8);
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  text-shadow: 0 1px 2px #222;
+  color: #FFF;
+  font-weight: bold;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+/* line 673, ../sass/style.scss */
+.fancybox-title-outside-wrap {
+  position: relative;
+  margin-top: 10px;
+  color: #fff;
+}
+
+/* line 679, ../sass/style.scss */
+.fancybox-title-inside-wrap {
+  padding-top: 10px;
+}
+
+/* line 683, ../sass/style.scss */
+.fancybox-title-over-wrap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  padding: 10px;
+  background: #000;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/*Retina graphics!*/
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* line 698, ../sass/style.scss */
+  #fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
+    background-image: url("fancybox_sprite@2x.png");
+    background-size: 44px 152px;
+    /*The size of the normal image, half the size of the hi-res image*/
+  }
+
+  /* line 703, ../sass/style.scss */
+  #fancybox-loading div {
+    background-image: url("fancybox_loading@2x.gif");
+    background-size: 24px 24px;
+    /*The size of the normal image, half the size of the hi-res image*/
+  }
+}
+/* line 729, ../sass/style.scss */
+* {
+  zoom: 1;
+}
+
+/* line 733, ../sass/style.scss */
+body {
+  color: #FFFFFF;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  width: 100%;
+  position: absolute;
+  margin: 0;
+  font-weight: 200;
+}
+
+/* line 742, ../sass/style.scss */
+ul {
+  list-style: none;
+}
+
+/* line 746, ../sass/style.scss */
+a {
+  font-weight: 400;
+  color: #FF4081;
+  text-decoration: none;
+}
+/* line 751, ../sass/style.scss */
+a:hover, a:focus {
+  color: #F48FB1;
+}
+
+/* line 756, ../sass/style.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+/* line 760, ../sass/style.scss */
+footer {
+  width: 100%;
+  background-color: #3F51B5;
+  height: 50px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.75);
+}
+/* line 766, ../sass/style.scss */
+footer p {
+  text-transform: uppercase;
+  font-size: 10px;
+  line-height: 10px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  display: block;
+  position: relative;
+  top: 20px;
+}
+
+/* line 778, ../sass/style.scss */
+.border, .circle {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #FFFFFF;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+/* line 787, ../sass/style.scss */
+.card-shadow, .project, .desc-text, .frame {
+  box-shadow: 1px 1px 4px rgba(49, 49, 64, 0.4);
+  -webkit-box-shadow: 1px 1px 4px rgba(49, 49, 64, 0.4);
+  -moz-box-shadow: 1px 1px 4px rgba(49, 49, 64, 0.4);
+}
+
+/* line 793, ../sass/style.scss */
+.accent-text {
+  color: #FF4081;
+}
+
+/* line 797, ../sass/style.scss */
+#header {
+  background-color: #3F51B5;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  box-shadow: 0 1px 8px rgba(49, 49, 64, 0.8);
+}
+/* line 807, ../sass/style.scss */
+#header h1 {
+  font-family: 'Oswald', sans-serif;
+  float: left;
+  padding: 12.5px 20px 12.5px 20px;
+  margin: 0;
+  font-size: 1em;
+  line-height: 25px;
+  vertical-align: middle;
+  display: inline-block;
+  height: 100%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+/* line 822, ../sass/style.scss */
+#header a {
+  color: #FFFFFF;
+  height: 100%;
+  display: inline-block;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+@media screen and (min-width: 600px) {
+  /* line 833, ../sass/style.scss */
+  #name:hover, #name.clicked {
+    background-color: #303F9F;
+  }
+}
+
+/* line 841, ../sass/style.scss */
+#navList {
+  float: right;
+  margin: 0;
+}
+@media screen and (min-width: 600px) {
+  /* line 841, ../sass/style.scss */
+  #navList {
+    height: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* line 841, ../sass/style.scss */
+  #navList {
+    display: none;
+    position: fixed;
+    left: 45px;
+    top: 12.5px;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.87);
+    z-index: 999999;
+    text-align: left;
+    box-shadow: -1px -1px 4px rgba(49, 49, 64, 0.8);
+    -webkit-box-shadow: -1px -1px 4px rgba(49, 49, 64, 0.8);
+    -moz-box-shadow: -1px -1px 4px rgba(49, 49, 64, 0.8);
+    border-radius: 1px;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    padding: 16px;
+    width: 192px;
+  }
+  /* line 865, ../sass/style.scss */
+  #navList.show {
+    display: block;
+  }
+}
+
+/* line 871, ../sass/style.scss */
+.navLink {
+  float: left;
+  margin: 0 30px 0 30px;
+  height: 100%;
+  line-height: 25px;
+  padding: 12.5px 10px 12.5px 10px;
+}
+@media screen and (min-width: 600px) {
+  /* line 878, ../sass/style.scss */
+  .navLink:hover, .navLink.clicked {
+    background-color: #303F9F;
+  }
+}
+/* line 885, ../sass/style.scss */
+.navLink:last-child {
+  margin-right: 50px;
+}
+@media screen and (max-width: 600px) {
+  /* line 885, ../sass/style.scss */
+  .navLink:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* line 871, ../sass/style.scss */
+  .navLink {
+    display: block;
+    height: 24px;
+    margin: 0;
+    padding: 16px 0;
+    float: none;
+    color: black !important;
+    display: block !important;
+  }
+}
+
+/* line 903, ../sass/style.scss */
+#mobile-nav {
+  height: 50%;
+  float: left;
+  position: relative;
+  padding: 12.5px;
+  display: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  /* line 903, ../sass/style.scss */
+  #mobile-nav {
+    display: block;
+  }
+}
+
+/* line 915, ../sass/style.scss */
+.contactList {
+  float: right;
+  margin: 0;
+  height: 100%;
+}
+/* line 919, ../sass/style.scss */
+.contactList .contact {
+  height: 100%;
+  float: left;
+  width: 45px;
+  margin: 0;
+  position: relative;
+  top: 0;
+  display: inline-block;
+  margin: 0 10px;
+}
+/* line 929, ../sass/style.scss */
+.contactList .contact img {
+  width: 100%;
+  vertical-align: middle;
+  position: relative;
+}
+/* line 935, ../sass/style.scss */
+.contactList .contact a {
+  display: block;
+  height: 100%;
+  padding: 12.5px 10px;
+}
+/* line 941, ../sass/style.scss */
+.contactList .contact:hover {
+  background-color: #303F9F;
+}
+/* line 945, ../sass/style.scss */
+.contactList .contact:last-child {
+  margin-right: 50px;
+}
+@media screen and (max-width: 900px) {
+  /* line 915, ../sass/style.scss */
+  .contactList {
+    display: none;
+  }
+}
+
+/* line 955, ../sass/style.scss */
+#about {
+  background-color: #7986CB;
+  width: 100%;
+  padding-bottom: 50px;
+  min-height: 100vh;
+}
+/* line 961, ../sass/style.scss */
+#about img {
+  width: 100%;
+}
+
+/* line 966, ../sass/style.scss */
+.imgContainer {
+  margin: auto;
+  width: 20%;
+  margin-top: 50px;
+  position: relative;
+}
+@media screen and (max-width: 900px) {
+  /* line 966, ../sass/style.scss */
+  .imgContainer {
+    width: 180px;
+  }
+}
+
+/* line 977, ../sass/style.scss */
+#intro {
+  width: 50%;
+  position: relative;
+  padding-top: 125px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 900px) {
+  /* line 977, ../sass/style.scss */
+  #intro {
+    width: 80%;
+  }
+}
+
+/* line 989, ../sass/style.scss */
+#experience {
+  background-color: #3F51B5;
+  width: 100%;
+  height: 100vh;
+}
+
+/* line 995, ../sass/style.scss */
+#projects {
+  background-color: #B6B6B6;
+  background-image: url(../images/crossword.png);
+  box-shadow: inset 0 4px 4px -4px rgba(0, 0, 0, 0.75), inset 0 -4px 4px -4px rgba(0, 0, 0, 0.75);
+  width: 100%;
+  padding-top: 5%;
+  position: relative;
+}
+/* line 1005, ../sass/style.scss */
+#projects ul {
+  width: 80%;
+  margin: auto;
+  padding: 0;
+  overflow: auto;
+}
+
+/* line 1013, ../sass/style.scss */
+.project {
+  width: 30%;
+  margin: 1.5%;
+  float: left;
+  margin-bottom: 40px;
+  border-radius: 2px;
+  background-color: #FFFFFF;
+  overflow: hidden;
+  padding-bottom: 16px;
+}
+/* line 1024, ../sass/style.scss */
+.project img {
+  width: 100%;
+}
+/* line 1028, ../sass/style.scss */
+.project h3 {
+  color: #000A14;
+  line-height: 1rem;
+  margin-left: 16px;
+  font-weight: 100;
+}
+/* line 1035, ../sass/style.scss */
+.project h4 {
+  color: #000A14;
+  font-style: italic;
+  line-height: 1rem;
+  margin: 10px;
+}
+/* line 1042, ../sass/style.scss */
+.project a {
+  margin-left: 16px;
+}
+@media screen and (max-width: 900px) {
+  /* line 1013, ../sass/style.scss */
+  .project {
+    width: 47%;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* line 1013, ../sass/style.scss */
+  .project {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/* line 1057, ../sass/style.scss */
+.primary {
+  color: #3F51B5;
+}
+
+/* line 1061, ../sass/style.scss */
+.bold {
+  font-weight: bold;
+}
+
+/* line 1065, ../sass/style.scss */
+.under {
+  text-decoration: underline;
+}
+
+/* line 1069, ../sass/style.scss */
+.circle {
+  border-radius: 50%;
+}
+
+/* line 1074, ../sass/style.scss */
+.hidden {
+  display: none !important;
+}
+
+/* line 1078, ../sass/style.scss */
+.project-desc {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #7986CB;
+  display: none;
+  padding: 10%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+/* line 1087, ../sass/style.scss */
+.project-desc .container {
+  width: 100%;
+  height: 100%;
+}
+/* line 1092, ../sass/style.scss */
+.project-desc h1 {
+  color: #212121;
+  font-size: 20px;
+}
+/* line 1097, ../sass/style.scss */
+.project-desc p {
+  color: #727272;
+  font-size: 14px;
+}
+
+/* line 1103, ../sass/style.scss */
+.desc-text {
+  padding: 16px;
+  border-radius: 2px;
+  width: 45%;
+  margin-right: 5%;
+  background-color: #FFFFFF;
+  display: inline-block;
+}
+@media screen and (max-width: 900px) {
+  /* line 1103, ../sass/style.scss */
+  .desc-text {
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+  }
+}
+
+/* line 1120, ../sass/style.scss */
+.desc-pictures {
+  width: 45%;
+  height: 100%;
+  display: inline-block;
+  float: right;
+  margin: auto;
+}
+/* line 1128, ../sass/style.scss */
+.desc-pictures img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+@media screen and (max-width: 900px) {
+  /* line 1120, ../sass/style.scss */
+  .desc-pictures {
+    width: 100%;
+    float: none;
+    margin: auto;
+    margin-top: 20px;
+  }
+}
+
+/* line 1144, ../sass/style.scss */
+.frame {
+  float: left;
+  margin-bottom: 10px;
+}
+
+/* line 1150, ../sass/style.scss */
+.buttons {
+  margin-top: 5px;
+  height: 48px;
+  vertical-align: middle;
+  display: table-cell;
+  margin-left: -12px;
+}
+/* line 1157, ../sass/style.scss */
+.buttons a {
+  padding: 0 8px 0 0;
+  margin: 0 4px 0 0;
+  height: 36px;
+  min-width: 64px;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+/* line 1168, ../sass/style.scss */
+.mid {
+  padding-left: 8px;
+  margin-left: 4px;
+}
